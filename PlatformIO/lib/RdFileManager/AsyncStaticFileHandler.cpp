@@ -102,7 +102,7 @@ bool AsyncStaticFileHandler::canHandle(AsyncWebServerRequest *request){
     if(_cache_control.length())
       request->addInterestingHeader("If-None-Match");
 
-    DEBUGF("[AsyncStaticFileHandler::canHandle] TRUE\n");
+    //DEBUGF("[AsyncStaticFileHandler::canHandle] TRUE\n");
     return true;
   }
   return false;
